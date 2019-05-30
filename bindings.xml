@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!--
+Copyright 2019 Matthew J. Aburn
+
+This program is free software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, or 
+(at your option) any later version. See <http://www.gnu.org/licenses/>.
+-->
+<typesystem package="QCustomPlot">
+    <load-typesystem name="typesystem_widgets.xml" generate="no"/>
+    <load-typesystem name="typesystem_printsupport.xml" generate="no"/>
+
+    <namespace-type name="QCP">
+        <enum-type name="ExportPen"/>
+        <enum-type name="ResolutionUnit"/>
+        <enum-type name="SignDomain"/>
+        <enum-type name="MarginSide" flags="MarginSides"/>
+        <enum-type name="AntialiasedElement" flags="AntialiasedElements"/>
+        <enum-type name="PlottingHint" flags="PlottingHints"/>
+        <enum-type name="Interaction" flags="Interactions"/>
+        <enum-type name="SelectionRectMode"/>
+        <enum-type name="SelectionType"/>
+    </namespace-type>
+
+    <object-type name="QCustomPlot">
+        <enum-type name="LayerInsertMode"/>
+        <enum-type name="RefreshPriority"/>
+    </object-type>
+
+    <object-type name="QCPPainter">
+        <enum-type name="PainterMode"/>
+    </object-type>
+
+    <object-type name="QCPLayerable"/>
+
+    <object-type name="QCPLayoutElement">
+        <enum-type name="UpdatePhase"/>
+        <enum-type name="SizeConstraintRect"/>
+    </object-type>
+
+    <object-type name="QCPLayout"/>
+
+    <object-type name="QCPLayoutGrid"/>
+
+    <object-type name="QCPAxis">
+        <enum-type name="AxisType"/>
+        <enum-type name="LabelSide"/>
+        <enum-type name="ScaleType"/>
+        <enum-type name="SelectablePart"/>
+    </object-type>
+
+    <object-type name="QCPAxisRect"/>
+
+    <object-type name="QCPGraph">
+        <enum-type name="LineStyle"/>
+    </object-type>
+
+    <object-type name="QCPLegend">
+        <enum-type name="SelectablePart"/>
+    </object-type>
+
+    <object-type name="QCPLayer">
+        <enum-type name="LayerMode"/>
+    </object-type>
+
+    <object-type name="QCPSelectionRect"/>
+
+    <object-type name="QCPColorMap"/>
+
+    <object-type name="QCPColorScale"/>
+
+    <object-type name="QCPBars">
+        <enum-type name="WidthType"/>
+    </object-type>
+
+</typesystem>
